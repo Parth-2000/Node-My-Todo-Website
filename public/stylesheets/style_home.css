@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: #fec107;
+    padding: 0;
+    margin: 0;
+  }
+  header{
+    position: sticky;
+    top: 0;
+    background-color: #fec107;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+  }
+  .nav_main{
+    width: 100%;
+    padding: 15px 50px 0px 50px;
+  }
+  .nav_main .nav_logo{
+    width: 40% auto;
+    float: left;
+    font-size: 30px;
+  }
+  .nav_main .nav_items{
+    width: 60% auto;
+    display: block;
+    float: right;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .nav_main .nav_items ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+  }
+  .nav_main .nav_items .nav_ul .nav_li{
+    float: right;
+    display: block;
+  }
+  .nav_main .nav_items .nav_ul .nav_li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 30px;
+  }
+  .nav_main .nav_items .nav_ul .nav_li a:hover{
+    color: green;
+    background-color: orange;
+  }
+  @media screen and (min-width: 0px) {
+    header{
+      position: sticky;
+      top: 0;
+      background-color: #fec107;
+      width: 100%;
+      height: 70px;
+      color: #fff;
+    }
+    .nav_main .nav_logo{
+      width: 40% auto;
+      float: left;
+      font-size: 30px;
+    }
+    .nav_main .nav_items .nav_ul .nav_li a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      padding: 10px 30px;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    header{
+      position: sticky;
+      top: 0;
+      background-color: #fec107;
+      width: 100%;
+      height: 70px;
+      color: #fff;
+    }
+    .nav_main .nav_logo{
+      width: 40% auto;
+      float: left;
+      font-size: 30px;
+    }
+    .nav_main .nav_items .nav_ul .nav_li a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      padding: 10px 30px;
+    }
+  }
+  
+  /* Form */
+  
+  .wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 3px 3px 6px grey;
+  }
+
+  .error{
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .wrapper .form{
+    width: 100%;
+  }
+  .wrapper .form .input_feild{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper .form .input_feild label{
+    width: 200px;
+    color: #757575;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .wrapper .form .input_feild .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  .wrapper .form .input_feild .input:focus,
+  .wrapper .form .input_feild select:focus {
+    border: 1px solid #fec107;
+  }
+  
+  .wrapper .form .input_feild .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  .wrapper .form .input_feild::last-child{
+    margin-bottom: 0;
+  }
+  .wrapper .form .input_feild .btn:hover{
+    background: #ffd658;
+  }
+  @media (max-width: 420px){
+    .wrapper .form .input_feild{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper .form .input_feild label{
+      margin-bottom: 5px;
+    }
+  }
+  .table_main{
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 3px 3px 6px grey;
+    border: none;
+  }
+  .table_main .table_row th{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+  }
+  .table_main .table_row_data td{
+    padding: 10px 10px 10px 10px;
+  }
+  .table_main .table_row_data .table_edit{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .table_main .table_row_data .table_delete{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  

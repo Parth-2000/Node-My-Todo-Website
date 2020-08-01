@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="/stylesheets/style_login_register.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        Registration Form
+      </div>
+      <div class="error">
+          <% if(msg != ''){ %>
+            <p> <%= msg %> </p>
+          <% } %>
+      </div>
+      <form action="/register" method="post">
+      <div class="form">
+        <div class="input_feild">
+          <label>UserName</label>
+          <input type="text" class="input" name="username" value="" required>
+        </div>
+        <div class="input_feild">
+          <label>Password</label>
+          <input type="password" class="input" name="password" value="" required>
+        </div>
+        <div class="input_feild">
+          <label>Confirm Password</label>
+          <input type="password" class="input" name="confirmpassword" value="" required>
+        </div>
+        <div class="input_feild">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select name="gender" required>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">female</option>
+            </select>
+          </div>
+        </div>
+        <div class="input_feild">
+          <label>Email Address</label>
+          <input type="email" name="email" class="input" required>
+        </div>
+        <div class="input_feild">
+          <label>Contact Number</label>
+          <input type="number" maxlength='10' name="contactnumber" class="input" required>
+        </div>
+        <div class="input_feild">
+          <input type="submit" value="Register" class="btn">
+        </div>
+        <div class="click_feild">
+          <a href="/">If Already Register? Click Here</a>
+        </div>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

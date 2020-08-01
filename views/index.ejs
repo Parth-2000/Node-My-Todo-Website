@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="/stylesheets/style_login_register.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        Login Form
+      </div>
+      <div class="error">
+        <% if(msg != ''){ %>
+          <p> <%= msg %> </p>
+        <% } %>
+      </div>
+      <form action="/" method="post">
+      <div class="form">
+        <div class="input_feild">
+          <label>Username</label>
+          <input type="text" class="input" name="username" required>
+        </div>
+        <div class="input_feild">
+          <label>Password</label>
+          <input type="password" class="input" name="password" value="" required>
+        </div>
+        <div class="input_feild">
+          <input type="submit" value="Login" class="btn">
+        </div>
+        <div class="click_feild">
+          <a href="/register">If not register? Click Here</a>
+        </div>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
+

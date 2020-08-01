@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo-Home</title>
+    <link rel="stylesheet" href="/stylesheets/style_home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav_main">
+        <div class="nav_logo">
+          <p>Anonmyous</p>
+        </div>
+        <div class="nav_items">
+          <ul class="nav_ul">
+            <li class="nav_li"><a href="/logout">Logout</a></li>
+            <li class="nav_li active" ><a href="/home">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="error">
+        <% if(loginUser){ %>
+            <p> Welcome <%= loginUser %> ! </p>
+        <% } %>
+    </div>
+    <div class="wrapper">
+      <div class="title">
+        Edit Todo
+      </div>
+      <div class="error">
+        <% if(msg != ""){ %>
+            <p><%= msg %></p>
+        <% } %>
+      </div>
+      <form action="/edit" method="post">
+      <div class="form">
+          <input type="hidden" name="id" value="<%= fetchData._id %>">
+        <div class="input_feild">
+          <label>Title</label>
+          <input type="text" class="input" name="title" value="<%= fetchData.title %>" required> 
+        </div>
+        <div class="input_feild">
+          <label>Description</label>
+          <input type="text" class="input" name="description" value="<%= fetchData.description %>" required>
+        </div>
+        <div class="input_feild">
+          <input type="submit" value="Edit Todo" class="btn">
+        </div>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
