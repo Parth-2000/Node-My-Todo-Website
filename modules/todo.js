@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://parth:Ppy@12345@cluster0.tzkaa.mongodb.net/todo?retryWrites=true&w=majority', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
+mongoose.connect('Your Database Connection Path', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
 
 var conn = mongoose.Collection;
 var todoSchema = new mongoose.Schema({
