@@ -1,9 +1,6 @@
 # Node-My-Todo-Website
 It is a simple Todo website. Node is used as server side language. 
 
-## For Live Preview Visit Below Link:
-
-http://my-todo-website.herokuapp.com/
 
 ## Features:
 
